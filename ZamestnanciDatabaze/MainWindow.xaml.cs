@@ -38,5 +38,15 @@ namespace ZamestnanciDatabaze
             Seznam.ItemsSource = Zamestnanci;
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Zamestnanec? hledany = Seznam?.SelectedItem as Zamestnanec;
+            if(hledany != null)
+            {
+                OknoEdit edit = new OknoEdit(hledany);
+                edit.Closing += Dialog_Closing;
+                edit.ShowDialog();
+            }
+        }
     }
 }

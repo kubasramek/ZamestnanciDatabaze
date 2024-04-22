@@ -34,7 +34,7 @@
                 Margin="336,159,0,0" 
                 VerticalAlignment="Top" 
                 Height="40" 
-                Width="110"/>
+                Width="110" Click="Button_Click_1"/>
         
         <Button Content="Smazat" 
                 HorizontalAlignment="Left" 
