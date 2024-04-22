@@ -7,11 +7,18 @@
         mc:Ignorable="d"
         Title="OknoEdit" Height="450" Width="400">
     <Grid>
-        <TextBox HorizontalAlignment="Center" Margin="0,98,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216" Height="34" x:Name="ProJmeno"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFDE6713" Offset="0.192"/>
+                <GradientStop Color="#FF331704" Offset="0.068"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox HorizontalAlignment="Center" Margin="0,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216" Height="34" x:Name="ProJmeno"/>
         
         <Label Content="Jméno" HorizontalAlignment="Left" Margin="92,67,0,0" VerticalAlignment="Top" Width="127"/>
         
-        <TextBox HorizontalAlignment="Center" Margin="0,168,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216" Height="34" x:Name="ProPrijmeni"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,168,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216" Height="34" x:Name="ProPrijmeni"/>
         
         <Label Content="Příjmení" HorizontalAlignment="Left" Margin="92,137,0,0" VerticalAlignment="Top" Width="127"/>
         
@@ -19,9 +26,9 @@
         
         <DatePicker HorizontalAlignment="Left" Margin="92,238,0,0" VerticalAlignment="Top" x:Name="ProDatum"/>
         
-        <Button Content="Editovat" HorizontalAlignment="Left" Margin="67,314,0,0" VerticalAlignment="Top" Height="34" Width="89" Click="Button_Click"/>
+        <Button Content="Editovat" HorizontalAlignment="Left" Margin="67,314,0,0" VerticalAlignment="Top" Height="34" Width="89" Click="Button_Click" Background="#FFE4D645"/>
         
-        <Button Content="Zahodit" Margin="243,314,67,0" VerticalAlignment="Top" Height="34" Click="Button_Click_1"/>
+        <Button Content="Zahodit" Margin="243,314,67,0" VerticalAlignment="Top" Height="34" Click="Button_Click_1" Background="#FFE4D645"/>
         
 
     </Grid>

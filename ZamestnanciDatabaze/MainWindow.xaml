@@ -5,12 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZamestnanciDatabaze"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="826">
-    <Grid Margin="0,0,337,0">
+        Title="MainWindow" Height="450" Width="580">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF1E2123" Offset="0.003"/>
+                <GradientStop Color="#FF0079FF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
 
         <ListView d:ItemsSource="{d:SampleData ItemCount=5}" 
-                  Margin="10,30,174,34" 
-                  x:Name="Seznam"/>
+                  Margin="10,30,0,34" 
+                  x:Name="Seznam" HorizontalAlignment="Left" Width="292" Background="#FFC8D64B"/>
 
 
 
@@ -20,28 +26,28 @@
                 VerticalAlignment="Top" 
                 Height="40" 
                 Width="110" 
-                Click="Button_Click"/>
-        
+                Click="Button_Click" Background="#FFE4DB07"/>
+
         <Button Content="Zobrazit detail" 
                 HorizontalAlignment="Left" 
                 Margin="336,94,0,0" 
                 VerticalAlignment="Top" 
                 Height="40" 
-                Width="110"/>
-        
+                Width="110" Click="Button_Click_2" Background="#FFEDE50C"/>
+
         <Button Content="Upravit" 
                 HorizontalAlignment="Left" 
                 Margin="336,159,0,0" 
                 VerticalAlignment="Top" 
                 Height="40" 
-                Width="110" Click="Button_Click_1"/>
-        
+                Width="110" Click="Button_Click_1" Background="#FFEAE112"/>
+
         <Button Content="Smazat" 
                 HorizontalAlignment="Left" 
                 Margin="336,221,0,0" 
                 VerticalAlignment="Top" 
                 Height="40" 
-                Width="110"/>
+                Width="110" Click="Button_Click_3" Background="#FFE8E012"/>
 
     </Grid>
 </Window>

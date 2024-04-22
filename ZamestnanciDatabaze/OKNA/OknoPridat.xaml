@@ -7,10 +7,16 @@
         mc:Ignorable="d"
         Title="OknoPridat" Height="450" Width="400">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF18B9A6" Offset="0.167"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <TextBox HorizontalAlignment="Left" 
                  Margin="59,82,0,0" 
                  TextWrapping="Wrap" 
-                 Text="TextBox" 
+                 Text="" 
                  VerticalAlignment="Top" 
                  Width="262" 
                  Height="32"
@@ -19,7 +25,7 @@
         <TextBox HorizontalAlignment="Left" 
                  Margin="59,156,0,0" 
                  TextWrapping="Wrap" 
-                 Text="TextBox" 
+                 Text="" 
                  VerticalAlignment="Top" 
                  Width="262" 
                  Height="32"
@@ -55,12 +61,12 @@
                 Margin="59,300,0,0" 
                 VerticalAlignment="Top" 
                 Height="32" 
-                Width="84" Click="Button_Click"/>
+                Width="84" Click="Button_Click" Background="#FFE2C925"/>
         
         <Button Content="Zahodit" 
                 Margin="257,300,59,0" 
                 VerticalAlignment="Top" 
-                Height="32" Click="Button_Click_1"/>
+                Height="32" Click="Button_Click_1" Background="#FFDCC31A"/>
 
     </Grid>
 </Window>

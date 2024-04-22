@@ -48,5 +48,23 @@ namespace ZamestnanciDatabaze
                 edit.ShowDialog();
             }
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Zamestnanec info = Seznam?.SelectedItem as Zamestnanec ?? new Zamestnanec(-1, "Neznamý", "Nenalezen", DateTime.Now);
+            MessageBox.Show($"{info.ID} {info.Jmeno} {info.Prijmeni} {info.Datumnarozeni.ToShortDateString()}");
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Zamestnanec? hledany = Seznam?.SelectedItem as Zamestnanec;
+            MessageBoxResult volba = MessageBox.Show($"Odebrat {hledany.Jmeno}?", "Odebrat",MessageBoxButton.YesNo );
+            if( volba == MessageBoxResult.Yes )
+            {
+                Zamestnanci.Remove(hledany);
+                Seznam.ItemsSource = null;
+                Seznam.ItemsSource = Zamestnanci;
+            }
+        }
     }
 }
