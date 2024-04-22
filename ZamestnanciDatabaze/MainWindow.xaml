@@ -5,13 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZamestnanciDatabaze"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="585">
-    <Grid Margin="0,0,107,0">
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" 
-                 Margin="40,30,0,29" 
-                 HorizontalAlignment="Left" 
-                 Width="233"/>
-        
+        Title="MainWindow" Height="450" Width="826">
+    <Grid Margin="0,0,337,0">
+
+        <ListView d:ItemsSource="{d:SampleData ItemCount=5}" 
+                  Margin="10,30,174,34" 
+                  x:Name="Seznam"/>
+
+
+
         <Button Content="Přidat" 
                 HorizontalAlignment="Left" 
                 Margin="336,30,0,0" 
